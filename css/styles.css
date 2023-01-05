@@ -69,10 +69,11 @@ body {
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 500;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 .header-mail:hover {
   color: var(--button-color);
+  stroke: var(--button-color);
 }
 .header-tel {
   text-decoration: none;
@@ -82,8 +83,14 @@ body {
 }
 .header-tel:hover {
   color: var(--button-color);
+  stroke: var(--button-color);
 }
-
+.mail-icon {
+  margin-right: 10px;
+}
+.tel-icon {
+  margin-right: 10px;
+}
 .list {
   list-style-type: none;
   display: flex;
@@ -153,10 +160,12 @@ main page styles
   width: 270px;
 }
 .benefits-icons {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background);
   margin-bottom: 30px;
   border-radius: 4px;
+  padding: 20px 100px;
 }
+
 .offers {
   text-align: center;
   padding-bottom: 86px;
@@ -226,6 +235,38 @@ main page styles
 
   color: var(--secondary-text-color);
   text-transform: capitalize;
+  margin-bottom: 28px;
+}
+.team-member-social {
+  text-decoration: none;
+  padding: 12px;
+}
+
+.team-member-social:hover,
+.team-member-social:focus {
+  fill: var(--button-text-color);
+  background-color: var(--button-color);
+  border-radius: 50%;
+}
+.customers {
+  padding: 94px 215px;
+}
+.customers-header {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.customers-list {
+  gap: 30px;
+}
+.customers-list-item {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.customers-list-item:hover,
+.customers-list-item:focus {
+  fill: var(--button-color);
 }
 
 /*
