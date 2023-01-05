@@ -97,7 +97,9 @@ main page styles
   background: var(--background-color);
   padding: 200px 0;
   text-align: center;
-  background-image: url("title.jpg");
+  background-image: linear-gradient(to bottom, #00000040, #00000040),
+    url(../images/title.jpg);
+  background-size: 1600px auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -131,7 +133,6 @@ main page styles
   padding: 94px 0;
 }
 .benefits-list {
-  align-items: center;
   gap: 30px;
 }
 
@@ -141,11 +142,20 @@ main page styles
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 .benefits-list-item-description {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
+}
+.benefits-list-item {
+  width: 270px;
+}
+.benefits-icons {
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 .offers {
   text-align: center;
