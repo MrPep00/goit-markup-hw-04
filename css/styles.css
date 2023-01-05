@@ -83,6 +83,7 @@ body {
 .header-tel:hover {
   color: var(--button-color);
 }
+
 .list {
   list-style-type: none;
   display: flex;
@@ -96,6 +97,9 @@ main page styles
   background: var(--background-color);
   padding: 200px 0;
   text-align: center;
+  background-image: url("title.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .title-header {
   font-size: 44px;
