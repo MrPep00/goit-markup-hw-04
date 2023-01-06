@@ -15,6 +15,9 @@ body {
   --project-item-border: #e5e5e5;
   --header-border: #ececec;
 }
+svg {
+  vertical-align: middle;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -85,10 +88,7 @@ body {
   color: var(--button-color);
   stroke: var(--button-color);
 }
-.mail-icon {
-  margin-right: 10px;
-}
-.tel-icon {
+.contact-icon {
   margin-right: 10px;
 }
 .list {
@@ -163,7 +163,6 @@ main page styles
   background-color: var(--secondary-background);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 20px 100px;
 }
 
 .offers {
@@ -235,25 +234,34 @@ main page styles
 
   color: var(--secondary-text-color);
   text-transform: capitalize;
-  margin-bottom: 28px;
+  padding-bottom: 30px;
 }
-.team-member-social {
-  text-decoration: none;
+.team-icon-list {
+  justify-content: center;
+}
+.team-social-icon {
   padding: 12px;
 }
-
-.team-member-social:hover,
-.team-member-social:focus {
-  fill: var(--button-text-color);
+.team-social-icon:hover,
+.team-social-icon:focus {
   background-color: var(--button-color);
+  stroke: var(--button-text-color);
+  fill: var(--button-text-color);
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 .customers {
   padding: 94px 215px;
 }
 .customers-header {
-  text-transform: capitalize;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
+
+  text-transform: capitalize;
   margin-bottom: 50px;
 }
 .customers-list {
@@ -266,6 +274,11 @@ main page styles
 }
 .customers-list-item:hover,
 .customers-list-item:focus {
+  border-color: var(--button-color);
+  cursor: pointer;
+}
+.customers-icon:hover,
+.customers-icon:focus {
   fill: var(--button-color);
 }
 
@@ -303,10 +316,19 @@ portfolio styles
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 30px;
-  column-gap: 27px;
 }
 .project-list-item {
   border: 1px solid var(--project-item-border);
+}
+.project-list-item:hover,
+.project-list-item:focus {
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px 0px #0000000f;
+
+  box-shadow: 0px 1px 1px 0px #0000001f;
+
+  box-shadow: 1px 4px 6px 0px #00000029;
 }
 .project-list-item-description {
   text-transform: capitalize;
@@ -341,7 +363,7 @@ portfolio styles
 .footer {
   background-color: var(--background-color);
   line-height: 1.17;
-  padding: 60px 0 60px;
+  padding: 60px 0;
 }
 .footer-logo {
   color: var(--button-text-color);
@@ -359,4 +381,33 @@ portfolio styles
 .footer-adddres-anchor {
   text-decoration: none;
   color: #ffffff99;
+}
+.footer-social-header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: left;
+
+  text-transform: uppercase;
+  color: var(--button-text-color);
+  margin-bottom: 20px;
+}
+.footer-icons-list {
+  gap: 10px;
+}
+.footer-icons-list-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background: #ffffff1a;
+  border-radius: 50%;
+}
+.footer-social-icon {
+  fill: var(--button-text-color);
+}
+.footer-icons-list-item:hover,
+.footer-icons-list-item:focus {
+  cursor: pointer;
+  background-color: var(--button-color);
 }
