@@ -14,6 +14,7 @@ body {
   --secondary-background: #f5f4fa;
   --project-item-border: #e5e5e5;
   --header-border: #ececec;
+  --icon-def: #afb1b8;
 }
 svg {
   vertical-align: middle;
@@ -241,6 +242,7 @@ main page styles
 }
 .team-social-icon {
   padding: 12px;
+  fill: var(--icon-def);
 }
 .team-social-icon:hover,
 .team-social-icon:focus {
@@ -276,6 +278,9 @@ main page styles
 .customers-list-item:focus {
   border-color: var(--button-color);
   cursor: pointer;
+}
+.customers-icon {
+  fill: var(--icon-def);
 }
 .customers-icon:hover,
 .customers-icon:focus {
@@ -364,6 +369,10 @@ portfolio styles
   background-color: var(--background-color);
   line-height: 1.17;
   padding: 60px 0;
+}
+.footer-box {
+  display: flex;
+  gap: 50px;
 }
 .footer-logo {
   color: var(--button-text-color);
