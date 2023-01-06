@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -25,20 +31,26 @@
             <nav>
               <ul class="menu-nav list">
                 <li class="nav-list-item"><a href="index.html">Studio</a></li>
-
                 <li class="nav-list-item">
                   <a href="portfolio.html">Portfolio</a>
                 </li>
-
-                <li class="nav-list-item"><a href="/">Contact</a></li>
+                <li class="nav-list-item"><a href="">Contact</a></li>
               </ul>
             </nav>
           </div>
           <div class="header-contacts">
-            <a class="header-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="header-mail" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
-            <a class="header-tel" href="tel:+12127724150">+1 212-772-4150</a>
+            <a class="header-tel" href="tel:+12127724150">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
           </div>
         </div>
       </div>
@@ -73,7 +85,6 @@
               </button>
             </li>
           </ul>
-
           <ul class="project-list list">
             <li class="project-list-item">
               <img
@@ -197,18 +208,45 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer-logo logo" href="index.html"
-          ><span class="logo-span">Web</span>Studio</a
-        >
-        <address class="footer-address">
-          695 Park Ave, New York, NY 10065, United States
-          <a href="mailto:info@devstudio.com" class="footer-adddres-anchor"
-            >info@devstudio.com</a
+        <div>
+          <a class="footer-logo logo" href="index.html"
+            ><span class="logo-span">Web</span>Studio</a
           >
-          <a href="tel:+12127724150" class="footer-adddres-anchor"
-            >+1 212-772-4150</a
-          >
-        </address>
+          <address class="footer-address">
+            695 Park Ave, New York, NY 10065, United States
+            <a href="mailto:info@devstudio.com" class="footer-adddres-anchor"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+12127724150" class="footer-adddres-anchor"
+              >+1 212-772-4150</a
+            >
+          </address>
+        </div>
+        <div class="footer-social-icons">
+          <h3 class="footer-social-header">find us on</h3>
+          <ul class="footer-icons-list list">
+            <li class="footer-icons-list-item">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="footer-icons-list-item">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="footer-icons-list-item">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="footer-icons-list-item">
+              <svg class="footer-social-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
