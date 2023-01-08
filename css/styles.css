@@ -162,6 +162,7 @@ main page styles
 }
 .benefits-icons {
   background-color: var(--secondary-background);
+  padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -196,6 +197,7 @@ main page styles
 .team-list {
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .team-list-item {
   border-bottom-left-radius: 4px;
@@ -254,7 +256,7 @@ main page styles
   height: 44px;
 }
 .customers {
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 .customers-header {
   font-size: 36px;
@@ -267,7 +269,8 @@ main page styles
   margin-bottom: 50px;
 }
 .customers-list {
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 26px;
 }
 .customers-list-item {
   padding: 16px 32px;
@@ -315,6 +318,11 @@ portfolio styles
 .filters-list-button:focus {
   background-color: var(--button-color);
   color: var(--button-text-color);
+  box-shadow: 0px 2px 2px 0px #0000001f;
+
+  box-shadow: 0px 1px 2px 0px #00000014;
+
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 .project-list {
   display: flex;
